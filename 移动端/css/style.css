@@ -1,0 +1,279 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wraper{
+	width: 100%;
+	overflow: hidden;
+}
+
+
+/*字体颜色与大小*/
+.gray{
+	font-size: 1rem;
+	color: color: #cdcdcd;
+}
+.grays{
+	font-size: 1rem;
+	color: #717171;
+}
+.orange{
+	font-size: 1rem;
+	color: #ff6600;
+}
+.bigText{
+	font-size: 1.2rem;
+}
+
+
+/*头部开始*/
+#header{
+	width: 100%;
+	height: 19.5rem;
+}
+#header nav{
+	width: 100%;
+	height: 5.5rem;
+}
+#header nav .nav-top{
+	width: 100%;
+	height: 3.375rem;
+	line-height: 3.375rem;
+	position: relative;
+	color: #cdcdcd;
+}
+#header .nav-top .logo{
+	width: 2.125rem;
+	height: 1.6rem;
+	display: inline-block;
+	background: url(../img/logo_03.png);
+	background-size: cover;
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+}
+#header .nav-top .searchArea{
+	width: 19.5rem;
+	height: 2rem;
+	border: 0.05rem solid #ede9ea;
+	border-radius: 4px;
+	position: absolute;
+	left: 3.75rem;
+	top: 0.625rem;
+}
+#header .nav-top .searchArea .s-icon{
+	display: inline-block;
+	margin-left: 0.625rem;
+	width: 1.575rem;
+	height: 1.575rem;
+	background: url(../img/s_03.png);
+	background-size: cover;
+}
+#header .nav-top .searchArea input{
+	width: 16rem;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 1rem;
+	vertical-align: top;
+}
+#header .nav-top .login{
+	color: #9c9899;
+	font-size: 1.02rem;
+	position: absolute;
+	right: 0.625rem;
+	top: 0rem;
+}
+
+/*顶部导航*/
+#header .nav{
+	width: 100%;
+	height: 2.2rem;
+	line-height: 2.2rem;
+}
+#header .nav li{
+	float: left;
+	font-size: 1rem;
+	margin-left: 1rem;
+	padding-left: 1rem;
+	color: #6a6a6c;
+}
+#header .nav li:nth-of-type(1){
+	padding-left:0;
+}
+#header .nav .active{
+	color: #ff6600;
+	border-bottom: 0.2rem solid #ff6600;
+	padding-bottom: 0.3rem;
+}
+
+/*轮播区*/
+#header .slider-box{
+	width: 100%;
+	height: 13.425rem;
+	overflow: hidden;
+	position: relative;
+}
+#header .slider-box #slider{
+	width: 400%;
+	height: 100%;
+}
+#header .slider-box #slider li{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+#header .slider-box #slider li img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#header #slide-point{
+	height: .65rem;
+	position: absolute;
+	right: 1.5rem;
+	bottom: 1rem;
+}
+#header #slide-point li{
+	float: left;
+	width: .65rem;
+	height: .65rem;
+	border-radius: 50%;
+	border: .08rem solid #fff;
+	box-sizing: border-box;
+	margin-left: 0.5rem;
+}
+#header #slide-point .active{
+	background: #fff;
+}
+
+
+
+
+/*主体部分*/
+.contentBox{
+	width: 100%;
+	position: relative;
+	background: #f6f8f7;
+	padding-top: .5rem;
+	padding-bottom: 3.5rem;
+	margin-top: -0.51rem;
+}
+.contentBox img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.contentBox .content1{
+	width: 100%;
+	height: 22.05rem;
+	background: #fff;
+}
+.content1 .title{
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: .88rem;
+	box-sizing: border-box;
+	padding-left: 1rem;
+}
+.content1 .title .bigText{
+	font-weight: 600;
+}
+.content1 .details{
+	width: 100%;
+	height: 19rem;
+	position: relative;
+}
+
+.content1 .details .detail-left{
+	width: 13.5rem;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.content1 .details .detail-top{
+	width: 13.4rem;
+	height: 9.43rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.content1 .details .detail-bottom{
+	width: 13.4rem;
+	height: 9.43rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.contentBox .bot-banner{
+	height: 10.5rem;
+	width: 100%;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+
+
+
+.contentBox .content2{
+	width: 100%;
+	height: 74.075rem;
+	background: #fff;
+}
+.contentBox .content2 .sku{
+	width: 100%;
+	height: 16.375rem;
+}
+.contentBox .content2 .detail{
+	width: 100%;
+	height: 19.25rem;
+	position: relative;
+}
+.contentBox .content2 .detail .left-detail,.right-detai{
+	height: 19.25rem;
+	width: 13.42rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.contentBox .content2 .detail .right-detail{
+	height: 19.25rem;
+	width: 13.44rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.contentBox .content2 .detail p{
+	margin-left: 1rem;
+	margin-top: .3rem;
+}
+.contentBox .content2 .detail p:nth-of-type(1){
+	font-weight: 600;
+}
+
+
+
+/*底部*/
+.footer{
+	width: 100%;
+	height: 3.325rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+}
+.footer ul{
+	width: 100%;
+	height: 100%;
+	line-height: 3.325rem;
+}
+.footer ul li{
+	float: left;
+	width: 6.625rem;
+	text-align: center;
+}
+.footer ul .active{
+	color: #ff6600;
+}
