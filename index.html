@@ -14,15 +14,15 @@
 		<link rel="stylesheet" type="text/css" href="css/media_index.css">
 		<link rel="stylesheet" type="text/css" href="css/mod.css">
 		
-		<!--animate-->
+		<!--animate and hover-->
 		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/hover.css"/>
 		
-		<!--主页js-->
-		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/mi.js" type="text/javascript" charset="utf-8"></script>
-		
-		<!--数据-->
-		<script src="js/data.js" type="text/javascript" charset="utf-8"></script>
+		<!--js模块-->
+		<script src="js/sea.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			seajs.use("./js/main.js");
+		</script>
 	</head>
 
 	<body>
@@ -31,42 +31,42 @@
 			<nav id="nav" class="site-topbar">
 				<div class="wraper">
 					<ul class="nav-left">
-						<li class="animated bounceInDown">
+						<li class="animated bounceInDown hvr-buzz">
 							<a href="#">小米商城</a>
 						</li>
-						<li class="animated bounceInLeft">
+						<li class="animated bounceInLeft hvr-wobble-bottom">
 							<a href="#">MUI</a>
 						</li>
-						<li class="animated bounceInDown">
+						<li class="animated bounceInDown hvr-wobble-horizontal">
 							<a href="#">米聊</a>
 						</li>
-						<li class="animated bounceInLeft">
+						<li class="animated bounceInLeft hvr-wobble-vertical">
 							<a href="#">游戏</a>
 						</li>
-						<li class="animated bounceInDown">
+						<li class="animated bounceInDown hvr-wobble-to-bottom-right">
 							<a href="#">多看阅读</a>
 						</li>
-						<li class="animated bounceInLeft">
+						<li class="animated bounceInLeft hvr-wobble-to-top-right">
 							<a href="#">云服务</a>
 						</li>
-						<li class="animated bounceInDown">
+						<li class="animated bounceInDown hvr-wobble-top">
 							<a href="#">金融</a>
 						</li>
-						<li class="animated bounceInLeft">
+						<li class="animated bounceInLeft hvr-buzz-out">
 							<a href="#">小米商城移动版</a>
 						</li>
-						<li class="animated bounceInDown">
+						<li class="animated bounceInDown hvr-wobble-skew">
 							<a href="#">问题反馈</a>
 						</li>
-						<li class="animated bounceInLeft">
+						<li class="animated bounceInLeft hvr-wobble-bottom">
 							<a href="#">Select Region</a>
 						</li>
 					</ul>
 					<ul class="nav-right">
-						<li class="animated bounceInDown">
+						<li class="animated bounceInDown hvr-pulse-shrink">
 							<a href="login.html">登录</a>
 						</li>
-						<li class="animated bounceInDown">
+						<li class="animated bounceInDown hvr-pulse-shrink">
 							<a href="register.html">注册</a>
 						</li>
 						<li class="buyCar animated fadeInRight">
@@ -88,7 +88,7 @@
 						<h2 class="animated bounceInLeft"></h2>
 					</hgroup>
 					<ul class="header-middle header-menu">
-						<li>
+						<!--<li>
 							<a href="detail.html">小米手机</a>
 							<div class="content">
 								<ul class="goods-list">
@@ -381,7 +381,7 @@
 								<ul class="good-list">
 									<li class="item">
 										<figure class="prod-img">
-											<!--<img src="">-->
+											
 										</figure>
 										<p class="name"></p>
 										<span class="price"></span>
@@ -395,20 +395,20 @@
 								<ul class="good-list">
 									<li class="item">
 										<figure class="prod-img">
-											<!--<img src="">-->
+											
 										</figure>
 										<p class="name"></p>
 										<span class="price"></span>
 									</li>
 								</ul>
 							</div>
-						</li>
+						</li>-->
 					</ul>
 					<div class="header-right">
 						<input type="text" class="search" list="search-record" name="search">
 						<button class="btn">搜索</button>
 						<ul>
-							<li>小米6<span>约有11件</span></li>
+							<!--<li>小米6<span>约有11件</span></li>
 							<li>红米Note 4X<span>约有7件</span></li>
 							<li>小米Mix<span>约有1件</span></li>
 							<li>小米Mix2<span>约有3件</span></li>
@@ -416,7 +416,7 @@
 							<li>小米手环<span>约有6件</span></li>
 							<li>小米盒子<span>约有19件</span></li>
 							<li>小米路由器<span>约有7件</span></li>
-							<li>小米充电宝<span>约有8件</span></li>
+							<li>小米充电宝<span>约有8件</span></li>-->
 						</ul>
 					</div>
 				</div>
@@ -610,7 +610,7 @@
 					<section class="main-right">
 						<div class="slider" id="slider">
 							<ul class="contain">
-								<li class="item">
+								<!--<li class="item">
 									<a href="#" alt=""><img src="./images/index_slider_pic1.jpg"></a>
 								</li>
 								<li class="item">
@@ -624,14 +624,14 @@
 								</li>
 								<li class="item">
 									<a href="#" alt=""><img src="./images/index_slider_pic5.jpg"></a>
-								</li>
+								</li>-->
 							</ul>
 							<ul class="slider-point">
-								<li class="active"></li>
+								<!--<li class="active"></li>
 								<li></li>
 								<li></li>
 								<li></li>
-								<li></li>
+								<li></li>-->
 							</ul>
 							<div class="btnBox">
 								<span class="prev">&lt;</span>
@@ -647,35 +647,35 @@
 					<ul class="rect6">
 						<li class="item">
 							<span></span>
-							<a href="">选购手机</a>
+							<a href="" class="hvr-wobble-skew">选购手机</a>
 						</li>
 						<li class="item">
 							<span></span>
-							<a href="">企业团购</a>
+							<a href="" class="hvr-wobble-skew">企业团购</a>
 						</li>
 						<li class="item">
 							<span></span>
-							<a href="">一元活动</a>
+							<a href="" class="hvr-wobble-skew">一元活动</a>
 						</li>
 						<li class="item">
 							<span></span>
-							<a href="">米粉卡</a>
+							<a href="" class="hvr-wobble-skew">米粉卡</a>
 						</li>
 						<li class="item">
 							<span></span>
-							<a href="">以旧换新</a>
+							<a href="" class="hvr-wobble-skew">以旧换新</a>
 						</li>
 						<li class="item">
 							<span></span>
-							<a href="">话费充值</a>
+							<a href="" class="hvr-wobble-skew">话费充值</a>
 						</li>
 					</ul>
 				</div>
 				<div class="span16">
 					<ul class="m-cols m-col-3">
-						<li class="col"><img src="images/adv1.jpg"></li>
-						<li class="col"><img src="images/adv2.jpg"></li>
-						<li class="col"><img src="images/adv3.jpg"></li>
+						<li class="col hvr-curl-top-left"><img src="images/adv1.jpg"></li>
+						<li class="col hvr-curl-bottom-left"><img src="images/adv2.jpg"></li>
+						<li class="col hvr-curl-top-right"><img src="images/adv3.jpg"></li>
 					</ul>
 				</div>
 
@@ -698,7 +698,7 @@
 				<div class="m-box">
 					<section class="span20 m-slide">
 						<div class="m-slide-contain m-s2">
-							<div class="m-slide-item">
+							<!--<div class="m-slide-item">
 								<ul class="m-cols m-col-5">
 									<li class="col sku-item animated flip">
 										<dl class="row">
@@ -785,7 +785,7 @@
 										</dl>
 									</li>
 								</ul>
-							</div>
+							</div>-->
 						</div>
 					</section>
 				</div>
@@ -2171,7 +2171,7 @@
 					<section class="m-box">
 						<div class="m-slide">
 							<div class="m-slide-contain m-s2">
-								<div class="m-slide-item">
+								<!--<div class="m-slide-item">
 									<ul class="m-cols m-col-5">
 										<li class="col">
 											<div class="row">
@@ -2278,7 +2278,7 @@
 											</div>
 										</li>
 									</ul>
-								</div>
+								</div>-->
 							</div>
 						</div>
 					</section>
@@ -2295,7 +2295,7 @@
 					</header>
 					<section class="m-box">
 						<ul class="m-cols m-col-4">
-							<li class="col">
+							<!--<li class="col">
 								<div class="row">
 									<img src="./images/rpcp/rpcp1.jpg">
 									<div class="content">
@@ -2346,7 +2346,7 @@
 										<a href="#" class="price">699元</a>
 									</div>
 								</div>
-							</li>
+							</li>-->
 						</ul>
 					</section>
 				</section>
@@ -2362,7 +2362,7 @@
 					</header>
 					<section class="m-box">
 						<ul class="m-cols m-col-4">
-							<li class="col orange">
+							<!--<li class="col orange">
 								<div class="row">
 									<dl>
 										<dt class="type">图书</dt>
@@ -2405,8 +2405,7 @@
 										<dd><img src="./images/content/content4.png"></dd>
 									</dl>
 								</div>
-							</li>
-
+							</li>-->
 						</ul>
 					</section>
 				</section>
@@ -2430,7 +2429,7 @@
 					</header>
 					<section class="m-box">
 						<ul class="m-cols m-col-4">
-							<li class="col">
+							<!--<li class="col animated flip">
 								<div class="row">
 									<div class="video">
 										<label class="play-btn" for="video-switch"></label>
@@ -2485,7 +2484,7 @@
 										<p class="desc">一亿人喜爱你，是一种责任</p>
 									</div>
 								</div>
-							</li>
+							</li>-->
 						</ul>
 					</section>
 				</section>

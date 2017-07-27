@@ -722,6 +722,7 @@ body {
 	font-size: 35px;
 	cursor: pointer;
 	color: #D4D2D0;
+	user-select:none;
 }
 .site-main .slider .btnBox span:hover{
 	background: rgba(0,0,0,.5);
@@ -1679,6 +1680,13 @@ body {
 	width: 295px;
 }
 
+.mi-content .col.orange .row,
+.mi-content .col.green .row,
+.mi-content .col.red .row,
+.mi-content .col.blue .row{
+	position: relative;
+}
+
 .mi-content .col.orange .row {
 	border-top: solid #FFAC13 1px;
 }
@@ -1828,6 +1836,7 @@ body {
 
 .mi-video .desc {
 	color: #b0b0b0;
+	font-size: 12px;
 }
 
 
