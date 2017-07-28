@@ -1,5 +1,8 @@
 body {
 	color: #333;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 .wraper {
@@ -95,8 +98,9 @@ body {
 	float: left;
 }
 
-.site-main .nav li.active {
-	border-bottom-color: #333;
+
+.site-main .nav li:hover {
+	color: #FF6700;
 }
 
 .main-left {

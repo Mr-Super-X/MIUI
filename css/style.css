@@ -722,7 +722,9 @@ body {
 	font-size: 35px;
 	cursor: pointer;
 	color: #D4D2D0;
-	user-select:none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 .site-main .slider .btnBox span:hover{
 	background: rgba(0,0,0,.5);
@@ -1036,6 +1038,7 @@ body {
 
 .mi-hard .desc {
 	height: 32px;
+	font-size: 12px;
 	color: #B0B0B0;
 }
 
@@ -1396,6 +1399,7 @@ body {
 }
 
 .mi-ambitus .desc{
+	font-size: 12px;
 	height: 32px;
 	color: #B0B0B0;
 }
@@ -1513,7 +1517,7 @@ body {
 }
 
 .mi-recommend dt {
-	padding-bottom: 24px;
+	padding-bottom: 20px;
 	padding-top: 24px;
 }
 
@@ -1526,6 +1530,7 @@ body {
 .mi-recommend .cmt {
 	font-size: 10px;
 	color: #B0B0B0;
+	padding-bottom: 25px;
 }
 
 .mi-recomentd .row {
@@ -1635,6 +1640,7 @@ body {
 }
 
 .mi-hotCmtProd .from {
+	font-size: 12px;
 	margin-top: 30px;
 }
 
@@ -2103,6 +2109,21 @@ body {
 }
 
 
+
+/*返回顶部*/
+.back-top{
+	position: fixed;
+	/*top: 530px;*/
+	right: -70px;
+	cursor: pointer;
+	transform-origin: right top;
+	transform: rotateZ(90deg);
+	transition: .5s;
+}
+.back-top img{
+	width: 100px;
+}
+
 /*------------------------------------------------------------------------------*/
 
 
@@ -2150,6 +2171,6 @@ body {
 
 /*添加动画*/
 
-.site-main .slider .contain {
+/*.site-main .slider .contain {
 	animation: slider_run 20s 1s infinite;
-}
+}*/
