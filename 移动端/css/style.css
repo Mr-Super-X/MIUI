@@ -42,12 +42,19 @@ body{
 	clear: both;
 	visibility: hidden;
 }
+.pages{
+	display: none;
+}
+
+.show{
+	display: block;
+}
 
 
 /*头部开始*/
 #header{
 	width: 100%;
-	height: 19.5rem;
+	height: 5.7rem;
 }
 #header nav{
 	width: 100%;
@@ -82,6 +89,7 @@ body{
 #header .nav-top .searchArea .s-icon{
 	display: inline-block;
 	margin-left: 0.625rem;
+	margin-bottom: .28rem;
 	width: 1.575rem;
 	height: 1.575rem;
 	background: url(../img/s_03.png);
@@ -107,8 +115,8 @@ body{
 /*顶部导航*/
 #header .nav{
 	width: 100%;
-	height: 2.2rem;
-	line-height: 2.2rem;
+	height: 2rem;
+	line-height: 2rem;
 }
 #header .nav li{
 	float: left;
@@ -123,24 +131,29 @@ body{
 #header .nav .active{
 	color: #ff6600;
 	border-bottom: 0.2rem solid #ff6600;
-	padding-bottom: 0.3rem;
+	padding-bottom: 0.4rem;
 }
 
 /*轮播区*/
-#header .slider-box{
+.slider-box{
 	width: 100%;
 	height: 13.425rem;
 	overflow: hidden;
 }
-#header .swiper-slide{
+.swiper-slide{
 	height: 100%;
 }
-#header .slider-box img{
+.slider-box img{
 	width: 100%;
 	height: 100%;
 	display: block;
 }
-
+#index>.pages:nth-of-type(4) .slider-box{
+	height: 19.175rem;
+}
+#index>.pages:nth-of-type(4) .content2,#index>.pages:nth-of-type(5) .content2,#index>.pages:nth-of-type(6) .content2{
+	margin-top: .5rem;
+}
 
 
 /*主体部分*/
@@ -249,10 +262,10 @@ body{
 
 
 /*--------------------分类页----------------------*/
-.title{
+.classify .title{
 	width: 100%;
 	height: 3.2rem;
-	background: #F2F2F2;
+	background: #f8f3f7;
 	text-align: center;
 	line-height: 3.2rem;
 	color: #6c6e69;
@@ -263,7 +276,7 @@ body{
 	border-bottom: 0.1rem solid #efefef;
 	z-index: 50;
 }
-.title h2{
+.classify .title h2{
 	width: 6rem;
 	margin: 0 auto;
 }
@@ -305,6 +318,9 @@ body{
 	padding-top: 1rem;
 	font-size: 1rem;
 	color: #363636;
+}
+#classify .left-nav ul li.active{
+	color: #ff6600;
 }
 
 #classify .right-content{
@@ -359,6 +375,16 @@ body{
 #shopping{
 	padding-bottom: 10rem;
 }
+.shopping .title{
+	width: 100%;
+	height: 3.2rem;
+	background: #f8f3f7;
+	text-align: center;
+	line-height: 3.2rem;
+	color: #6c6e69;
+	font-size: 0.8rem;
+}
+
 #shopping .login-info{
 	padding: 0 1.3rem;
 	height: 4rem;
@@ -435,6 +461,156 @@ body{
 .recommend ul li:nth-of-type(2n){
 	margin-left: 0.34rem;
 }
+/*----------------购物车结束----------------*/
+
+
+/*----------------个人中心----------------*/
+.personal{
+	width: 100%;
+	background: #f7f7f7;
+	padding-bottom: 13rem;
+}
+.my-order,.indent-info,.discounts,.m-home,.setting{
+	width: 100%;	
+	background: #fff;
+	padding: 0 1rem;
+	box-sizing: border-box;
+}
+
+.personal .login-register{
+	width: 100%;
+	height: 5.708rem;
+	line-height: 5.708rem;
+	background: #f87c08;
+	position: relative;
+}
+.personal .login-bg{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg_0425a88.png);
+	background-size: cover;
+}
+.personal .login-icon{
+	width: 3.2rem;
+	height: 3.2rem;
+	position: absolute;
+	left: 1rem;
+	top: 1.3rem;
+	background: url(../img/login_03.png) no-repeat;
+	background-size: cover;
+}
+.personal .login-text{
+	position: absolute;
+	left: 4.8rem;
+	font-size: 1rem;
+	color: #fff;
+}
+.personal .my-order{
+	height: 2.869rem;
+	line-height: 2.869rem;
+	border-bottom: 0.05rem solid #ededed;
+}
+.personal .indent{
+	float: left;
+}
+.personal .all-indent{
+	float: right;
+	color: #777976;
+	font-size: 1rem;
+}
+.personal .indent-info{
+	height: 6.2447rem;
+	border-top: 0.03rem solid #d7d7d7;
+}
+.indent-info ul li{
+	float: left;
+	height: 100%;
+	line-height: 3rem;
+	text-align: center;
+	width: 8.3rem;
+	position: relative;
+	box-sizing: border-box;
+	padding-top: 1.2rem;
+}
+.indent-info ul li .order-icon{
+	display: block;
+	width: 1.8987rem;
+	height: 1.561rem;
+	background-size: cover;
+	margin: auto;
+}
+.indent-info ul li:nth-of-type(1) .order-icon{
+	background: url(../img/新建参考线_03.png);
+}
+.indent-info ul li:nth-of-type(2) .order-icon{
+	background: url(../img/新建参考线_05.png);
+}
+.indent-info ul li:nth-of-type(3) .order-icon{
+	background: url(../img/新建参考线_07.png);
+}
+.indent-info ul li span{
+	color: #333;
+}
+
+.discounts{
+	margin-top: 0.63rem;
+	height: 3.797468rem;
+	line-height: 3.5rem;
+}
+.left-discount{
+	float: left;
+	display: inline-block;
+	width: 1.814rem;
+	height: 1.7em;
+	background-size: cover;
+	margin-top: .9rem;
+	margin-right: 1.3rem;
+}
+.right-discount{
+	float: right;
+	display: inline-block;
+	width: 1.476rem;
+	height: 1.772rem;
+	background: url(../img/大于号_03.png);
+	background-size: cover;
+	margin-top: .9rem;
+}
+.discounts .left-discount{
+	margin-top: .8rem;
+	background: url(../img/新建参考线_13.png);
+}
+.m-home{
+	margin-top: .63rem;
+	height: 7.5949rem;
+}
+.m-home ul li{
+	height: 3.797468rem;
+	line-height: 3.79rem;
+}
+.m-home ul li:nth-of-type(1){
+	border-bottom: 0.05rem solid #e1e1e1;
+}
+.m-home ul li:nth-of-type(1) .left-discount{
+	background: url(../img/新建参考线_16.png);
+}
+.m-home ul li:nth-of-type(2) .left-discount{
+	background: url(../img/新建参考线_18.png);
+}
+.setting{
+	margin-top: .63rem;
+	line-height: 3.79rem;
+	height: 3.797468rem;
+}
+.setting .left-discount{
+	height: 1.6rem;
+	margin-top: 1rem;
+	background: url(../img/新建参考线_20.png);
+}
+
+
+
+
+
 
 /*底部*/
 .footer{
@@ -443,6 +619,7 @@ body{
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	z-index: 999;
 	background: #fff;
 	border-top: 0.06rem solid #ccc;
 }
