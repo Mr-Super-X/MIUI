@@ -1,3 +1,5 @@
+@import url("reset.css");
+
 /*全局样式*/
 
 body {
@@ -161,7 +163,7 @@ body {
 .m-hd .tabs .item.active,
 .m-hd .tabs .item:hover {
 	color: #FF6700;
-	border-bottom: solid 2px #ff6700
+	border-bottom: solid 2px #ff6700;
 }
 
 
@@ -442,7 +444,7 @@ body {
 }
 
 .header-right .search {
-	width: 79%;
+	width: 78%;
 	height: 50px;
 	border: none;
 	text-indent: 10px;
@@ -455,7 +457,7 @@ body {
 	width: 60px;
 	border: none;
 	border: solid #ccc 1px;
-	height: 52px;
+	height: 54px;
 	border-left: none;
 	background: transparent;
 	cursor: pointer;
@@ -471,13 +473,13 @@ body {
 }
 
 .header-right ul {
-	width: 79%;
+	width: 78.1%;
 	height: auto;
 	position: absolute;
 	left: 0px;
 	top: 100%;
 	z-index: 2;
-	margin-top: -2px;
+	margin-top: -1px;
 	border: solid #ccc 1px;
 	border-top: none;
 	overflow: hidden;
@@ -495,7 +497,7 @@ body {
 	position: relative;
 }
 
-.header-right ul li span {
+.header-right ul li span:nth-of-type(2) {
 	position: absolute;
 	right: 10px;
 	color: #bcbcbc;
@@ -557,7 +559,7 @@ body {
 }
 
 .site-main>* {
-	/*height:460px;*/
+	height: 100%;
 }
 
 .site-main .main-left {
@@ -575,6 +577,7 @@ body {
 .main-left>ul>li {
 	color: #fff;
 	padding: 5.3% 10%;
+	box-sizing: border-box;
 }
 
 .main-left>ul>li:hover {
@@ -608,6 +611,7 @@ body {
 	position: absolute;
 	left: 0;
 	top: 0px;
+	overflow-y: hidden;
 }
 
 .main-left .content .good-list:nth-of-type(1) {}
@@ -651,10 +655,7 @@ body {
 }
 
 .site-main .main-right {
-	background: #ccc;
 	width: 100%;
-	/*height:460px;*/
-	background: #ccc;
 	float: right;
 }
 
@@ -667,14 +668,18 @@ body {
 .site-main .slider {
 	overflow: hidden;
 	position: relative;
+	width: 100%;
 }
 
 .site-main .slider .contain {
 	width: 500%;
-	overflow: hidden;
 	font-size: 0px;
-	transform: translateX(0);
-	transition: 1s;
+	/*transform: translateX(0);
+	-webkit-transform: translateX(0px);*/
+	transition: .5s;
+	position: relative;
+	left: 0;
+	top: 0;
 }
 
 .site-main .slider .item {
@@ -714,19 +719,22 @@ body {
 	top: 45%;
 	right: 0;
 }
-.site-main .slider .btnBox span{
+.site-main .slider .btnBox button{
 	width: 40px;
 	height: 70px;
 	line-height: 70px;
 	text-align: center;
+	border: none;
+	outline: none;
 	font-size: 35px;
 	cursor: pointer;
 	color: #D4D2D0;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
+	background: none;
 }
-.site-main .slider .btnBox span:hover{
+.site-main .slider .btnBox button:hover{
 	background: rgba(0,0,0,.5);
 	color: #fff;
 }
@@ -901,7 +909,7 @@ body {
 }
 
 .mi-sku .m-slide-contain {
-	transition: all 1s;
+	transition: all .5s;
 	transform: translate(0, 0);
 }
 
@@ -953,12 +961,12 @@ body {
 
 .mi-sku .sku-switch:checked.s1~.m-hd .btns2 .btn1 {
 	color: #666;
-	border-color: #666;
+	border-color: #bbb;
 }
 
 .mi-sku .sku-switch:checked.s2~.m-hd .btns2 .btn2 {
-	color: #999;
-	border-color: #666;
+	color: #666;
+	border-color: #bbb;
 }
 
 
@@ -1043,7 +1051,7 @@ body {
 }
 
 .mi-hard .price {
-	color: orange;
+	color: #FF6700;
 }
 
 
@@ -1079,7 +1087,7 @@ body {
 }
 
 .mi-match .m-slide-contain {
-	transition: transform 1s;
+	transition: transform .5s;
 }
 
 .mi-match .m-slide .m-slide-item {
@@ -1201,7 +1209,7 @@ body {
 }
 
 .mi-match .price {
-	color: orange
+	color: #FF6700;
 }
 
 .mi-match .cmt {
@@ -1243,7 +1251,7 @@ body {
 }
 
 .mi-parts .m-slide-contain {
-	transition: transform 1s;
+	transition: transform .5s;
 }
 
 .mi-parts .m-slide .m-slide-item {
@@ -1365,7 +1373,7 @@ body {
 }
 
 .mi-parts .price {
-	color: orange
+	color: #FF6700;
 }
 
 .mi-parts .cmt {
@@ -1395,7 +1403,7 @@ body {
 }
 
 .mi-ambitus .price {
-	color: orange
+	color: #FF6700;
 }
 
 .mi-ambitus .desc{
@@ -1424,7 +1432,7 @@ body {
 }
 
 .mi-ambitus .m-slide-contain {
-	transition: all 1s;
+	transition: all .5s;
 }
 
 .mi-ambitus .m-slide .m-slide-item {
@@ -1594,12 +1602,12 @@ body {
 
 .mi-recommend .recommend-switch:checked.s1~.m-hd .btns2 .btn1 {
 	color: #666;
-	border-color: #666;
+	border-color: #bbb;
 }
 
 .mi-recommend .recommend-switch:checked.s2~.m-hd .btns2 .btn2 {
 	color: #999;
-	border-color: #666;
+	border-color: #bbb;
 }
 
 
@@ -1775,6 +1783,9 @@ body {
 #video .video {
 	position: relative;
 	cursor: pointer;
+}
+#video video{
+	width: 600px;
 }
 
 #video .video:after {
@@ -2114,11 +2125,17 @@ body {
 .back-top{
 	position: fixed;
 	/*top: 530px;*/
-	right: -70px;
+	right: -100px;
 	cursor: pointer;
 	transform-origin: right top;
+	-moz-transform-origin: right top;
+	-webkit-transform-origin: right top;
+	-o-transform-origin: right top;
+	-ms-transform-origin: right top;
 	transform: rotateZ(90deg);
+	-moz-transform: rotateZ(90deg);
 	transition: .5s;
+	-moz-transition: .5s;
 }
 .back-top img{
 	width: 100px;
