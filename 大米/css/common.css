@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd,a,i,em,b,strong,img,input{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;color:#666;}
+i,em{font-style:normal;}
+b,strong{font-weight:normal;}
+input{border:none;background:none;outline:none;}
+img,select,input{vertical-align:middle; }
+textarea{outline:none;resize:none;}
+img{display:block; border:none; }
+
+
+.clear:after{content:'';clear:both;display:block;}
+.clear{zoom:1;}
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+
+body {
+    background: #fff;
+    font-family: "Hiragino Sans GB", "WenQuanYi Micro Hei", tahoma, sans-serif;
+    font-size: 12px;
+    color: #666;
+    box-sizing:border-box;
+}
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+.container:before{
+    content: '';
+    display: table;
+}
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
